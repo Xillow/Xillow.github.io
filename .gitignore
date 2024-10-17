@@ -4,6 +4,9 @@ package/generated*
 # Ignore installed npm modules
 node_modules/
 
+# Ignore .github folder
+.github/
+
 # Ignore build tool output, e.g. code coverage
 .nyc_output/
 coverage/
