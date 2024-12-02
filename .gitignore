@@ -25,3 +25,7 @@ _site/
 # Ignore test files
 .cache
 test/stubs-layout-cache/_includes/*.js
+
+#random files
+deprecated/
+Notes.md

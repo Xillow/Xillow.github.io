@@ -1,0 +1,35 @@
+---
+layout: layouts/base
+---
+<div class="col-lg-3 order-1 bg-dark-subtle">
+	<!--Left Side Bar Under Info in mobile-->
+	<!-- {{ content3 | default: "test1" }} -->
+</div>
+
+<div class="col p-4 order-sm-2">
+	<div class="row"><!--Portfolio-->
+		<div class="row pb-3 d-flex text-center align-items-center">
+			<h1 class="display-6"> {{PHeader | default: "Featured Works"}}</h1>
+		</div>
+		<div class="row d-flex row-gap-3 justify-content-evenly">
+			<!--portfolio cards-->
+
+			{%- for project in collections.project -%}
+			<div class="card shadow" style="width: 16rem; height: 20rem;">
+				<a href="{{project.url}}"><img src="{{project.data.image}}" class="card-img-top" alt="..."></a></a>
+				<div class="card-body">
+					<h5 class="card-title"><a
+							class="link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+							href="{{project.url}}">{{project.data.title}}</a></h5>
+					<p class="card-text"> {{project.data.summary}}</p>
+
+				</div>
+			</div>
+			{%- endfor -%}
+		</div>
+	</div>
+</div>
+
+<div class="col-lg-3 order-3 bg-dark-subtle ">
+	<!--right side bar -->
+</div>

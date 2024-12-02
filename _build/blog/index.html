@@ -1,0 +1,36 @@
+---
+layout: layouts/base
+content1: Lorem ipsum odor amet, consectetuer adipiscing elit. Ultricies lectus nam magnis lectus hac class. Potenti dis consequat nibh sagittis tincidunt scelerisque; volutpat tempor. Ut arcu fringilla ullamcorper torquent massa varius tortor. Mollis posuere himenaeos sollicitudin nec scelerisque condimentum justo sed. Posuere nullam auctor aptent imperdiet condimentum efficitur senectus interdum. Per urna himenaeos ac nisi ridiculus molestie fermentum. Efficitur nunc montes curae metus dictumst hac amet. Nisi vulputate aliquet ad mattis finibus ultrices fames. Pellentesque himenaeos blandit curabitur penatibus lacus litora. Venenatis risus eros congue aenean egestas efficitur pretium. Dictum enim nulla quam volutpat venenatis aptent tempus. In et natoque nulla; mattis luctus nam finibus turpis. Dapibus est condimentum dis ornare phasellus mi himenaeos habitant semper. Senectus ad metus nisi litora urna sociosqu sodales. Adipiscing adipiscing feugiat ornare nullam proin montes montes. Viverra taciti in urna magna etiam elementum morbi. Tellus risus habitasse efficitur risus posuere sapien imperdiet porta fames. Posuere orci efficitur praesent feugiat cras laoreet platea parturient. Massa ultricies malesuada netus eros gravida ad, posuere tempor. Donec mattis ligula justo ligula ad montes. Ornare accumsan viverra ante augue maximus nibh, duis rhoncus quis. Sem hendrerit euismod a dictum leo vitae semper luctus. Sit libero eros lectus morbi ex. Molestie nec malesuada mi quis ultrices proin gravida. Cras duis litora nostra; vitae iaculis aliquam. Primis eget quam pulvinar dolor dignissim magna ultricies. Elit lacus tincidunt auctor nisl phasellus dolor. Nibh iaculis efficitur ridiculus netus platea, sem urna dolor rhoncus. Convallis mollis nunc ornare eget; risus velit suspendisse nostra. Augue iaculis vivamus ut a ante gravida euismod himenaeos. Justo eget ultrices placerat tristique erat habitasse. Pharetra molestie tincidunt lobortis nisi imperdiet maecenas vulputate eleifend. Habitant augue diam ipsum id faucibus diam volutpat. Hendrerit justo est elit, viverra nunc pulvinar. Augue urna tristique, ex sed vestibulum suspendisse. Luctus feugiat habitasse quis consectetur tincidunt sociosqu. Potenti molestie amet platea laoreet sagittis. Morbi magnis torquent pulvinar sociosqu penatibus fames. Mattis eu inceptos sodales est diam. Duis malesuada laoreet fermentum purus ligula potenti hac. Ut curae bibendum taciti laoreet mi arcu venenatis. Euismod fermentum vel purus nisl natoque pulvinar mollis ultrices. 
+content2: It's my blog!
+content3: Lorem ipsum odor amet, consectetuer adipiscing elit. Ultricies lectus nam magnis lectus hac class. Potenti dis consequat nibh sagittis tincidunt scelerisque; volutpat tempor. Ut arcu fringilla ullamcorper torquent massa varius tortor. Mollis posuere himenaeos sollicitudin nec scelerisque condimentum justo sed. Posuere nullam auctor aptent imperdiet condimentum efficitur senectus interdum. Per urna himenaeos ac nisi ridiculus molestie fermentum. Efficitur nunc montes curae metus dictumst hac amet. Nisi vulputate aliquet ad mattis finibus ultrices fames. Pellentesque himenaeos blandit curabitur penatibus lacus litora. Venenatis risus eros congue aenean egestas efficitur pretium. Dictum enim nulla quam volutpat venenatis aptent tempus. In et natoque nulla; mattis luctus nam finibus turpis. Dapibus est condimentum dis ornare phasellus mi himenaeos habitant semper. Senectus ad metus nisi litora urna sociosqu sodales. Adipiscing adipiscing feugiat ornare nullam proin montes montes. Viverra taciti in urna magna etiam elementum morbi. Tellus risus habitasse efficitur risus posuere sapien imperdiet porta fames. Posuere orci efficitur praesent feugiat cras laoreet platea parturient. Massa ultricies malesuada netus eros gravida ad, posuere tempor. Donec mattis ligula justo ligula ad montes. Ornare accumsan viverra ante augue maximus nibh, duis rhoncus quis. Sem hendrerit euismod a dictum leo vitae semper luctus. Sit libero eros lectus morbi ex. Molestie nec malesuada mi quis ultrices proin gravida. Cras duis litora nostra; vitae iaculis aliquam. Primis eget quam pulvinar dolor dignissim magna ultricies. Elit lacus tincidunt auctor nisl phasellus dolor. Nibh iaculis efficitur ridiculus netus platea, sem urna dolor rhoncus. Convallis mollis nunc ornare eget; risus velit suspendisse nostra. Augue iaculis vivamus ut a ante gravida euismod himenaeos. Justo eget ultrices placerat tristique erat habitasse. Pharetra molestie tincidunt lobortis nisi imperdiet maecenas vulputate eleifend. Habitant augue diam ipsum id faucibus diam volutpat. Hendrerit justo est elit, viverra nunc pulvinar. Augue urna tristique, ex sed vestibulum suspendisse. Luctus feugiat habitasse quis consectetur tincidunt sociosqu. Potenti molestie amet platea laoreet sagittis. Morbi magnis torquent pulvinar sociosqu penatibus fames. Mattis eu inceptos sodales est diam. Duis malesuada laoreet fermentum purus ligula potenti hac. Ut curae bibendum taciti laoreet mi arcu venenatis. Euismod fermentum vel purus nisl natoque pulvinar mollis ultrices.
+---
+<div class="col-lg-3 order-1 bg-dark-subtle">
+	<!--Left Side Bar Under Info in mobile-->
+	<!-- {{ content3 | default: "test1" }} -->
+</div>
+<div class="col p-4 order-sm-2">
+	<div class="row p-5 d-flex text-center align-items-center">
+		<h1 class="display-6"> {{BHeader | default: "Latest Posts"}}</h1>
+	</div>
+	<div class="row row-gap-3">
+		{%- for posts in collections.post reversed -%}
+		<div class="card shadow">
+			<div class="card-body">
+				<h4 class="card-title"><a
+						class="link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+						href="{{project.url}}">{{posts.data.title}}</a></h4>
+				<p class="card-text"> {{posts.data.summary}}</p>
+
+			</div>
+			<div class="card-body text-end">
+				{{posts.date}}
+			</div>
+		</div>
+
+		{%- endfor -%}
+	</div>
+</div>
+
+<div class="col-lg-3 order-3 bg-dark-subtle ">
+	<!--right side bar -->
+</div>
