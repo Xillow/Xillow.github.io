@@ -86,6 +86,7 @@ let colorTheme = theme;
 
 
 setTheme(getPreferredTheme())
+setModalTheme(getPreferredTheme())
 	
 	
 	const showActiveTheme = (theme, focus = false) => {
