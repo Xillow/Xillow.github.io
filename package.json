@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "eleventy --serve",
-    "build": "eleventy"
+    "build": "eleventy",
     "pagefind": "pagefind --site _site"
-    "
+    
   },
   "keywords": [],
   "author": "",
