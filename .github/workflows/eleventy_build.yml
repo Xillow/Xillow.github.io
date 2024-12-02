@@ -1,0 +1,17 @@
+Eleventy Action
+Eleventy Action
+Build your Eleventy-based static website
+
+Installation
+Copy and paste the following snippet into your .yml file.
+
+              
+- name: Eleventy Action
+
+
+              
+  uses: TartanLlama/actions-eleventy@v1.3
+
+
+            
+Learn more about this action in TartanLlama/actions-eleventy
