@@ -47,6 +47,13 @@ let colorTheme = theme;
 	}
 	
 	if (colorTheme === 'dark') {
+		root.style.setProperty('--pagefind-ui-primary', '#eee');
+		root.style.setProperty('--pagefind-ui-text', '#eee');
+		root.style.setProperty('--pagefind-ui-background', '#152028');
+		root.style.setProperty('--pagefind-ui-border', '#444');
+		root.style.setProperty('--pagefind-ui-tag', '#444');
+
+
 		modalTheme.style.backgroundColor = "#081b22";
 		mbtnBlueSky.style.fill = 'white';
 		mbtnTwitch.style.color = 'white';
@@ -56,14 +63,15 @@ let colorTheme = theme;
 		mThemeIcon.classList.remove('bi-sun-fill');
 		mThemeIcon.classList.add('bi-moon-stars-fill');
 
-		root.style.setProperty('--pagefind-ui-primary', '#eee');
-		root.style.setProperty('--pagefind-ui-text', '#eee');
-		root.style.setProperty('--pagefind-ui-background', '#152028');
-		root.style.setProperty('--pagefind-ui-border', '#444');
-		root.style.setProperty('--pagefind-ui-tag', '#444');
-		
+
 
 	} else {
+		root.style.setProperty('--pagefind-ui-primary', '#393939');
+		root.style.setProperty('--pagefind-ui-text', '#393939');
+		root.style.setProperty('--pagefind-ui-background', '#fff');
+		root.style.setProperty('--pagefind-ui-border', '#eee');
+		root.style.setProperty('--pagefind-ui-tag', '#eee');
+
 		modalTheme.style.backgroundColor = "#00BFFF";
 
 		mbtnBlueSky.style.fill = 'black';
@@ -74,11 +82,7 @@ let colorTheme = theme;
 		mThemeIcon.classList.remove('bi-moon-stars-fill');
 		mThemeIcon.classList.add('bi-sun-fill');
 
-		root.style.setProperty('--pagefind-ui-primary', '#393939');
-		root.style.setProperty('--pagefind-ui-text', '#393939');
-		root.style.setProperty('--pagefind-ui-background', '#fff');
-		root.style.setProperty('--pagefind-ui-border', '#eee');
-		root.style.setProperty('--pagefind-ui-tag', '#eee');
+
 		
 	}
 		
