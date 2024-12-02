@@ -6,6 +6,8 @@
   "scripts": {
     "start": "eleventy --serve",
     "build": "eleventy"
+    "pagefind": "pagefind --site _site"
+    "
   },
   "keywords": [],
   "author": "",
