@@ -88,9 +88,40 @@ let colorTheme = theme;
 		
 }
 
+const setSearchTheme = theme => {
+
+	const root = document.querySelector(':root');
+
+	let colorTheme = theme;
+	if (theme === 'auto') {
+		colorTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+	} else {
+		colorTheme = theme;
+
+	}
+
+	if (colorTheme === 'dark') {
+		root.style.setProperty('--pagefind-ui-primary', '#eee');
+		root.style.setProperty('--pagefind-ui-text', '#eee');
+		root.style.setProperty('--pagefind-ui-background', '#152028');
+		root.style.setProperty('--pagefind-ui-border', '#444');
+		root.style.setProperty('--pagefind-ui-tag', '#444');
+
+
+	} else {
+		root.style.setProperty('--pagefind-ui-primary', '#393939');
+		root.style.setProperty('--pagefind-ui-text', '#393939');
+		root.style.setProperty('--pagefind-ui-background', '#fff');
+		root.style.setProperty('--pagefind-ui-border', '#eee');
+		root.style.setProperty('--pagefind-ui-tag', '#eee');
+
+	}
+
+}
+
 
 setTheme(getPreferredTheme())
-setModalTheme(getPreferredTheme())
+setSearchTheme(getPreferredTheme())
 	
 	
 	const showActiveTheme = (theme, focus = false) => {
