@@ -58,7 +58,7 @@
 		<div class="modal animate__animated" id="menuModal" tabindex="-1" aria-label="Menu Modal" aria-modal="true" aria-hidden="true">
 			<div class="modal-dialog modal-fullscreen">
 				<div class="modal-content" id="ModalBackground" style="background-color: #081b22;">
-					<div class="d-flex justify-content-around py-3 sticky-top" >
+					<div class="d-flex justify-content-around py-3 " >
 						<button class="order-1 btn btn-link nav-link p-2 dropdown-toggle animate__animated" id="btnThemeChange" type="button" aria-expanded="true" data-bs-toggle="dropdown" aria-label="Toggle Theme" aria-current="page">
 							<i class="bi ms-2" id="bd-theme-text" style="font-size: 2.5rem;" width></i>
 						</button>
@@ -92,10 +92,10 @@
 					
 					</div>
 
-					<ul class="container-fluid">
-						<li class="d-flex justify-content-sm-start justify-content-center text-white animate__animated" id="socialBtns">
-							<a class="p-3" title="Bluesky" href="https://bsky.app/profile/xillow.bsky.social" target="_blank" aria-labelledby="btnBluesky">
-								<svg class="pt-2" width="28" height="28" viewBox="0 0 568 501" fill="black" xmlns="http://www.w3.org/2000/svg" id="btnBlueSky" alt="Bluesky Logo">
+					<div class="d-flex flex-column align-items-center align-items-sm-start min-vh-75">
+						<div class="d-flex justify-content-sm-start justify-content-center text-white animate__animated" id="socialBtns">
+							<a class="px-3" title="Bluesky" href="https://bsky.app/profile/xillow.bsky.social" target="_blank" aria-labelledby="btnBluesky">
+								<svg class="pt-2" width="29" height="29" viewBox="0 0 568 501" fill="black" xmlns="http://www.w3.org/2000/svg" id="btnBlueSky" alt="Bluesky Logo">
 									<path d="M123.121 33.6637C188.241 82.5526 258.281 181.681 284 234.873C309.719 181.681 379.759 82.5526
 									 444.879 33.6637C491.866 -1.61183 568 -28.9064 568 57.9464C568 75.2916 558.055 203.659 552.222
 									 224.501C531.947 296.954 458.067 315.434 392.347 304.249C507.222 323.8 536.444 388.56 473.333
@@ -105,36 +105,28 @@
 									    15.7778 224.501C9.94525 203.659 0 75.2916 0 57.9464C0 -28.9064 76.1345 -1.61183 123.121 33.6637Z"/>
 								</svg>
 							</a>
-							<a class="p-3" title="Twitch" href="https://twitch.tv/JustXillow" target="_blank" aria-labelledby="btnTwitch">
+							<a class="px-3" title="Twitch" href="https://twitch.tv/JustXillow" target="_blank" aria-labelledby="btnTwitch">
 								<i class="bi bi-twitch pt-2" style="font-size: 1.5rem; color: black;" width="24" height="24" id="btnTwitch" alt="Twitch Logo"></i>
 							</a>
-							<a class="p-3" title="Github" href="https://github.com/Xillow" target="_blank" aria-labelledby="btnGitHub">
+							<a class="px-3" title="Github" href="https://github.com/Xillow" target="_blank" aria-labelledby="btnGitHub">
 								<i class="bi bi-github pt-2" style="font-size: 1.5rem; color: black;" width="24" height="24" id="btnGitHub" alt="Github Logo" ></i>
 							</a>
-							<a class="p-3" title="Email" href="mailto:JustXillow@gmail.com" target="_blank" aria-labelledby="btnMail" >
+							<a class="px-3" title="Email" href="mailto:JustXillow@gmail.com" target="_blank" aria-labelledby="btnMail" >
 								<i class="bi bi-envelope-fill pt-2" style="font-size: 1.5rem; color: black;" width="24" height="24" id="btnMail" alt="Mail Icon"></i>
 							</a>
-						</li>
-
-						<li class="d-flex pb-5 justify-content-sm-start justify-content-center">
-							<a class="display-1 animate__animated link-body-emphasis link-underline link-underline-opacity-0" id="btnModalHome" href="/">Home</a> 
-						</li>
-
-						<li class="d-flex pb-5 justify-content-sm-start justify-content-center">
-							<a class="display-1 animate__animated link-body-emphasis link-underline link-underline-opacity-0" id="btnModalAbout" href="/about">About</a>
-						</li>
-
-						<li class="d-flex pb-5 justify-content-sm-start justify-content-center">
-							<a class="display-1 animate__animated link-body-emphasis link-underline link-underline-opacity-0" id="btnModalPortfolio" href="/portfolio">Portfolio</a>
-						</li>
-
-						<li class="d-flex pb-5 justify-content-sm-start justify-content-center">
-							<a class="display-1 animate__animated link-body-emphasis link-underline link-underline-opacity-0" id="btnModalBlog" href="/blog">Blog</a>
-						</li>
-
-					</ul>
-					<div class="d-flex fixed-bottom" style="background-color: #4db34d; padding-top: 4rem; padding-bottom: 3.5rem "></div>
-					<div class="container-fluid py-5 fixed-bottom" style="background-color: #6F4E37;"></div>
+						</div>
+						
+						<a class="display-1 p-3 animate__animated link-body-emphasis link-underline link-underline-opacity-0" id="btnModalHome" href="/">Home</a> 
+										
+						<a class="display-1 p-3 animate__animated link-body-emphasis link-underline link-underline-opacity-0" id="btnModalAbout" href="/about">About</a>
+									
+						<a class="display-1 p-3 animate__animated link-body-emphasis link-underline link-underline-opacity-0" id="btnModalPortfolio" href="/portfolio">Portfolio</a>
+									
+						<a class="display-1 p-3 animate__animated link-body-emphasis link-underline link-underline-opacity-0" id="btnModalBlog" href="/blog">Blog</a>
+						
+					</div>
+					<div class="d-flex fixed-bottom" style="background-color: #4db34d; padding-top: 2rem; padding-bottom: 2rem "></div>
+					<div class="container-fluid py-3 fixed-bottom" style="background-color: #6F4E37;"></div>
 				</div>
 			</div>
 		</div>
