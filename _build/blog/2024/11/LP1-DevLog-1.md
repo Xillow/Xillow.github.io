@@ -1,5 +1,5 @@
 ---
-layout: layouts/post
+layout: layouts/blogpost
 
 tags: ["post","Lycoris Legends: Reaper's Lullaby","Unreal Engine 5"]
 

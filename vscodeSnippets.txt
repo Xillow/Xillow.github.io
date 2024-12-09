@@ -1,0 +1,48 @@
+	"Blog Post Frontmatter":{
+		"prefix": "#blogpost",
+		"body": [
+			"---",
+			"layout: layouts/blogpost",
+			"tags: [$0]",
+			"image: ", 
+			"title: ",
+			"summary: ",
+			"date: ${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}",
+			"---"
+		],
+		"description": "Frontmatter for Blog Posts"	
+	},
+
+	"Project Post Frontmatter": {
+		"prefix": "#projpost",
+		"body": [
+			"---",
+			"layout: layouts/projectpost",
+			"tags: [$0]",
+			"image: ",
+			"title: ",
+			"summary: ",
+			"---"
+		],
+		"description": "Frontmatter for Project Posts"
+	},
+
+	"Page Body":{
+		"prefix": "#body",
+		"body": [
+			"<div class='col-lg-3 order-1 bg-dark-subtle'>",
+				"<!--Left Side Bar Under Info in mobile-->",
+			"</div>",
+
+			"<div class='col p-4 order-sm-2'>",
+				"{{ content}}",
+			"</div>",
+
+			"<div class='col-lg-3 order-3 bg-dark-subtle'>",
+				"<!--right side bar -->",
+			"</div>"
+		],
+		"description": "base body for website"
+
+	},
+

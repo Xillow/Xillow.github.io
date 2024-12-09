@@ -16,13 +16,13 @@ BHeader:
 		<div class="row">
 			<div class="col-lg p-5 d-flex align-items-center justify-content-center">
 				<div>
-					<h1 class="display-3">Matthew Brown</h1>
-					<h1 class="display-6"> Programmer</h1>
-					<h1 class="lead"> Designer</h1>
+					<h1 class="display-3">Xillow's Domain</h1>
+					<h1 class="lead">— Project Museum and Blog</h1>
+					<!--<h1 class="lead"> Designer</h1> -->
 				</div>
 			</div> <!--blurb-->
-			<div class="col-lg-4 pb-5 d-flex align-items-center justify-content-center"><img src="/assets/headshot.jpg"
-					class="img-thumbnail" alt="A Picture of the website owner" width="400" height="auto"> </div>
+			<!-- <div class="col-lg-4 pb-5 d-flex align-items-center justify-content-center"><img src="/assets/headshot.jpg"
+					class="img-thumbnail" alt="A Picture of the website owner" width="400" height="auto"> </div> -->
 			<!--Portrait-->
 		</div>
 		<div class="row"> <!--paragraph-->
@@ -81,7 +81,7 @@ BHeader:
 
 				</div>
 				<div class="card-body text-end">
-					{{posts.date}}
+					{{posts.date | postDate}}
 				</div>
 			</div>
 			{% endif %}

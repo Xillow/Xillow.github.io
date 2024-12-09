@@ -7,7 +7,6 @@
     "start": "eleventy --serve",
     "build": "eleventy",
     "pagefind": "pagefind --site _site"
-    
   },
   "keywords": [],
   "author": "",
@@ -15,6 +14,7 @@
   "type": "module",
   "dependencies": {
     "@11ty/eleventy": "^3.0.0",
+    "@11ty/eleventy-plugin-rss": "^2.0.2",
     "animate.css": "^4.1.1",
     "bootstrap": "^5.3.3",
     "bootstrap-icons": "^1.11.3"
