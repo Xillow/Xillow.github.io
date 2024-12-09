@@ -31,6 +31,7 @@ export default function (eleventyConfig) {
 	eleventyConfig.addPassthroughCopy({"_build/_includes/js": "js"});
 	eleventyConfig.addPassthroughCopy({"_build/_includes/assets": "assets"});
 	eleventyConfig.addPassthroughCopy({"_build/_includes/css": "css"});
+	eleventyConfig.addPassthroughCopy({ "_build/robots.txt": "/robots.txt" });
 	
 	eleventyConfig.addFilter("postDate", (dateObj) => {
 		return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATETIME_MED_WITH_WEEKDAY);
