@@ -35,6 +35,7 @@ const mbtnBlueSky = document.querySelector('#btnBlueSky');
 const mbtnTwitch = document.querySelector('#btnTwitch');
 const mbtnGithub = document.querySelector('#btnGitHub');
 const mbtnEmail = document.querySelector('#btnMail');
+const mbtnRSS = document.querySelector('#btnRSS');
 const mThemeIcon = document.querySelector('#bd-theme-text');
 const root = document.querySelector(':root');
 
@@ -47,18 +48,12 @@ let colorTheme = theme;
 	}
 	
 	if (colorTheme === 'dark') {
-		root.style.setProperty('--pagefind-ui-primary', '#eee');
-		root.style.setProperty('--pagefind-ui-text', '#eee');
-		root.style.setProperty('--pagefind-ui-background', '#152028');
-		root.style.setProperty('--pagefind-ui-border', '#444');
-		root.style.setProperty('--pagefind-ui-tag', '#444');
-
-
 		modalTheme.style.backgroundColor = "#081b22";
 		mbtnBlueSky.style.fill = 'white';
 		mbtnTwitch.style.color = 'white';
 		mbtnGithub.style.color = 'white';
 		mbtnEmail.style.color = 'white';
+		mbtnRSS.style.color = 'white';
 
 		mThemeIcon.classList.remove('bi-sun-fill');
 		mThemeIcon.classList.add('bi-moon-stars-fill');
@@ -66,18 +61,13 @@ let colorTheme = theme;
 
 
 	} else {
-		root.style.setProperty('--pagefind-ui-primary', '#393939');
-		root.style.setProperty('--pagefind-ui-text', '#393939');
-		root.style.setProperty('--pagefind-ui-background', '#fff');
-		root.style.setProperty('--pagefind-ui-border', '#eee');
-		root.style.setProperty('--pagefind-ui-tag', '#eee');
-
 		modalTheme.style.backgroundColor = "#00BFFF";
 
 		mbtnBlueSky.style.fill = 'black';
 		mbtnTwitch.style.color = 'black';
 		mbtnGithub.style.color = 'black';
 		mbtnEmail.style.color = 'black';
+		mbtnRSS.style.color = 'black';
 
 		mThemeIcon.classList.remove('bi-moon-stars-fill');
 		mThemeIcon.classList.add('bi-sun-fill');
